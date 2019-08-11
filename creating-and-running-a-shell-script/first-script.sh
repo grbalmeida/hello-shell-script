@@ -13,13 +13,16 @@
 #                                                                               #
 #################################################################################
 
+STUDENT_FILE=files/students.txt
+DATE=$(date +%D)
+TIME=$(date +%H:%M:%S)
+
 clear
 echo "====== My first script ======"
 echo ""
-echo -n "Display current date and time"
-echo ""
-date
+echo "Display current date: $DATE"
+echo "Display current time: $TIME"
 echo ""
 echo "====== Student listing ======"
 echo ""
-sort files/students.txt
+sort $STUDENT_FILE
